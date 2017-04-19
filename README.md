@@ -18,6 +18,11 @@ Once the objectives outlined above have been met, please send email with the fol
 information: Github repository, IP address to your ELB (Wordpress front door).
 
 ## Solution:
+Deliverable: [Link To Running Solution](http://wordpressha-1933558749.us-west-2.elb.amazonaws.com) 
+
+
+
+## To Reproduce:
 1. Download the file wordpress-ha.json to your computer
 2. Run the following command on the commandline replacing appropriate placeholder values.
   (Placeholder values are surrouded by [ ]. Replace the value and the brackets)
@@ -42,6 +47,20 @@ To check the status of the the stack creation from the command line:
 
         aws cloudformation describe-stacks --stack-name [StackName]
 
+You can also check the status of the stack creation through the AWS Web Console -> CloudFormation 
+
+
+### Problems with the excercise or my understanding of what the excercise is looking for: 
+  The exercise states that Elastic IP should be use in the solution.
+  
+  -and-
+  
+  The exercise asks for the the IP address of the Elastic Load Balancer to test from.
+
+
+  Elastic Load Balancer does not support Elastic IP, nor a single ip address. Ip addresses are assigned to the ELB behind the scenes and could change over time.  So, an IP Address cannot be provided for testing, but the appropriate URL can be.
+  
+  Elastic IP address(es) could be attached to the running instances, so if this was the intent, it is not completed, but I can add that functionality, if desired. 
 
 <!--
 * [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
