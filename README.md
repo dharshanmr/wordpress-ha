@@ -18,9 +18,13 @@ Once the objectives outlined above have been met, please send email with the fol
 information: Github repository, IP address to your ELB (Wordpress front door).
 
 ## Solution:
-Deliverable: [Link To Running Solution](http://wordpressha-1933558749.us-west-2.elb.amazonaws.com) 
+Deliverable:
 
+[Link To Running Solution](http://wordpressha-884419035.us-west-2.elb.amazonaws.com/)
 
+[Link To Running Solution Admin](http://wordpressha-884419035.us-west-2.elb.amazonaws.com/wp-login.php)
+
+User and Pass sent in email.
 
 ## To Reproduce:
 1. Download the file wordpress-ha.json to your computer
@@ -60,14 +64,6 @@ You can also check the status of the stack creation through the AWS Web Console 
 
   Elastic Load Balancer does not support Elastic IP, nor a single ip address. Ip addresses are assigned to the ELB behind the scenes and could change over time.  So, an IP Address cannot be provided for testing, but the appropriate URL can be.
   
-  Elastic IP address(es) could be attached to the running instances, so if this was the intent, it is not completed, but I can add that functionality, if desired. 
+  Elastic IP address(es) could be attached to the running instances, so if this was the intent, it is not complete.  Please let me know if that is where the Elastic IP was intended to be placed, and I can modify. 
 
-<!--
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
--->
